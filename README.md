@@ -1,5 +1,5 @@
 #/surfreport/{beachID}
-Returns the surf height, wind speed, tide levels, water temperature, and recommendation about whether to go surf for the specified beach.
+Returns the surf height, wind speed, tide levels, water temperature, and general recommendation for whether to go surf for a specified beach.
 
 **NOTE:** {beachID} is the ID for the specified beach. A list of available beaches is at `http://example.com/surfreport/beaches_available`.
 
