@@ -3,8 +3,6 @@ Returns the surf height, wind speed, tide levels, water temperature, and general
 
 **NOTE:** {beachID} is the ID for the specified beach. A list of available beaches is at `http://example.com/surfreport/beaches_available`.
 
-**NOTE:** Surf reports do not include rip tide conditions.
-
 ##Endpoint
 `/surfreport/{beachId}`
 
