@@ -107,7 +107,6 @@ This code sample:
 ##Error Codes
 Code| Description | Message Displayed
 :---: | --- | ---
-200 | Successful request | Your request was successful.
 400 | Invalid request or request cannot be processed | Your request is invalid or cannot be processed. {Error message that explains more about the specific problem.}
 401 | Missing or invalid authentication credentials | The authentication credentials are missing or invalid.
 403 | Missing or invalid authorization credentials | The authorization credentials are missing or invalid.
