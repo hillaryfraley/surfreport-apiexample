@@ -104,9 +104,14 @@ This code sample:
   * Submits the authorization through the header instead of in the endpoint path.
   * Returns only the surf height parameter.
 
-
-
 ##Error Codes
-Code | Description | Notes
---- | --- | ---
-400 | Bad Request: The request could not be understood by the server due to malformed syntax. The client SHOULD NOT repeat the request without modifications. | Response will include an indication of the error.
+Code| Description | Message Displayed
+:---: | --- | ---
+200 | Successful request | Your request was successful.
+400 | Invalid request or request cannot be processed | Your request is invalid or cannot be processed. {Error message that explains more about the specific problem.}
+401 | Missing or invalid authentication credentials | The authentication credentials are missing or invalid.
+403 | Missing or invalid authorization credentials | The authorization credentials are missing or invalid.
+404 | Specified beach not found | The beach ID you specified is not currently included in our list of available beaches. The up-to-date list of available beaches is at `http://example.com/surfreport/beaches_available`.
+429| Reached rate limit | Rate limit reached. Please try again later.
+500| Problem with server | There is an internal problem with the server. Please notify the Surf Report development team.
+503 | Service unavailable | Surf Report is down for maintenance. Please try again later.
