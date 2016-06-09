@@ -18,6 +18,7 @@ units | string| No | Either `imperial` or `metric`. Default is `imperial`. Imper
 time | integer | No | Format is unix (ms since 1970). Time zone is UTC.
 
 ##Sample Request
+>**NOTE:** This sample request is from http://idratherbewriting.com/docapis_doc_sample_requests/.
 
 `https://simple-weather.p.mashape.com/surfreport/123?&days=2&units=metric&hour=1400553000`
 
@@ -26,6 +27,8 @@ time | integer | No | Format is unix (ms since 1970). Time zone is UTC.
 
 
 ##Sample Response
+>**NOTE:** This sample response is from http://idratherbewriting.com/docapis_doc_sample_responses/.
+
 	{
     "surfreport": [
         {
@@ -69,6 +72,8 @@ Item | Description
 `{day}/{time}/recommendation` | General recommendation of whether to go surfing at the specified day and time. Three possible recommendations: 1. "Go surfing!", 2. "Surfing conditions OK, not great.", 3. "Not today -- try some other activity." Based on returned values of elements `wind`, `watertemp`, and `surfheight`, with each element scored according to how close it is to ideal for surfing at the  specified day and time.
 
 ##Code Sample
+>**NOTE:** This code sample is from http://idratherbewriting.com/docapis_doc_code_samples/.
+
 This code sample shows how to use the `/surfreport/{beachId}` endpoint to get surf conditions for a specific beach, including a general recommendation about whether to go surfing.
 ```html
 <!DOCTYPE html>
